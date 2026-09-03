@@ -1,0 +1,41 @@
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="rk8xx_pwrkey"
+P: Phys=rk8xx_pwrkey/input0
+S: Sysfs=/devices/platform/ff180000.i2c/i2c-0/0-0020/input/input0
+U: Uniq=
+H: Handlers=kbd event0 dmcfreq 
+B: PROP=0
+B: EV=3
+B: KEY=10000000000000 0
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="rockchip,rk817-codec Headphones"
+P: Phys=ALSA
+S: Sysfs=/devices/platform/rk817-sound/sound/card0/input1
+U: Uniq=
+H: Handlers=event1 
+B: PROP=0
+B: EV=21
+B: SW=4
+
+I: Bus=0019 Vendor=484b Product=1100 Version=0100
+N: Name="GO-Super Gamepad"
+P: Phys=odroidgo3_joypad/input0
+S: Sysfs=/devices/platform/odroidgo3-joypad/input/input2
+U: Uniq=
+H: Handlers=js0 event2 dmcfreq 
+B: PROP=0
+B: EV=b
+B: KEY=1f 0 0 f00000000 0 0 0 3db000000000000 0 0 0 0
+B: ABS=1b
+
+I: Bus=0019 Vendor=0001 Product=0001 Version=0100
+N: Name="rk29-keypad"
+P: Phys=gpio-keys/input0
+S: Sysfs=/devices/platform/rg351-keys/input/input3
+U: Uniq=
+H: Handlers=event3 
+B: PROP=0
+B: EV=100003
+B: KEY=8000 c000000000000 0
+

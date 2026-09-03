@@ -1,0 +1,205 @@
+{
+ "schema": "nx-device-input-proof-roteiro/1",
+ "port_id": "fp2",
+ "generated_by": "nxgenerator 0.3.17",
+ "classification": "ON_DEVICE_AUTOMATED_INPUT_PROOF",
+ "session": "owner-remap",
+ "purpose": "owner copy with A = null and R2 = fp2.attack in [gameplay]: same ELF, edited file reaches the engine",
+ "clones": 1,
+ "steps": [
+  {
+   "timeout_s": 900,
+   "wait_log": "context=menu source=stage:no-player"
+  },
+  {
+   "sleep_ms": 6000
+  },
+  {
+   "ms": 150,
+   "press": "START"
+  },
+  {
+   "sleep_ms": 4000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 4000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "ms": 150,
+   "press": "A"
+  },
+  {
+   "sleep_ms": 7000
+  },
+  {
+   "timeout_s": 90,
+   "wait_log": "source=stage:player-alive"
+  },
+  {
+   "sleep_ms": 5000
+  },
+  {
+   "ms": 150,
+   "press": "B"
+  },
+  {
+   "sleep_ms": 2500
+  },
+  {
+   "ms": 150,
+   "press": "B"
+  },
+  {
+   "sleep_ms": 2500
+  },
+  {
+   "ms": 150,
+   "press": "B"
+  },
+  {
+   "sleep_ms": 3000
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "A",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "suppressed",
+   "context": "gameplay",
+   "control": "A"
+  },
+  {
+   "expect": "no_delivery",
+   "control": "A"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "R2",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "delivery",
+   "context": "gameplay",
+   "control": "R2",
+   "action": "fp2.attack",
+   "sink": "adapter.input.android-keyevent"
+  },
+  {
+   "expect": "count",
+   "kind": "delivery",
+   "control": "R2",
+   "pressed": 1,
+   "value": 1
+  },
+  {
+   "mark": true
+  },
+  {
+   "chord": [
+    "SELECT",
+    "START"
+   ],
+   "ms": 300
+  },
+  {
+   "wait_exit": true,
+   "timeout_s": 60
+  },
+  {
+   "expect": "log",
+   "regex": "SELECT\\+START: lifecycle exit requested|exit-chord"
+  },
+  {
+   "expect": "exit_status",
+   "value": 0
+  },
+  {
+   "expect": "process_gone"
+  }
+ ]
+}

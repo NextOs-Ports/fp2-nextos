@@ -1,0 +1,55 @@
+# NEXTOSCONTROLLERS — controles do NextOS / NextOS controls
+# Formato próprio do NextOS. NÃO é gptokeyb: nunca vira teclado.
+# NextOS own format. NOT gptokeyb: never becomes a keyboard.
+#
+# Edite as ações à direita para trocar os controles. A lista de ações
+# válidas vem do adapter-contract.json do port. Este arquivo é SEU:
+# atualizações do port nunca sobrescrevem a sua cópia editada.
+# Edit the actions on the right to remap. Valid actions come from the
+# port's adapter-contract.json. This file is YOURS: port updates never
+# overwrite your edited copy.
+
+format = NEXTOS_CONTROLLERS/3
+port = fp2
+
+FACE_LAYOUT = auto
+
+[menu]
+A = fp2.confirm
+B = fp2.cancel
+X = native
+Y = native
+L1 = native
+R1 = native
+L2 = native
+R2 = native
+L3 = native
+R3 = native
+START = fp2.pause
+SELECT = native
+UP = native
+DOWN = native
+LEFT = native
+RIGHT = native
+LEFT_STICK = native
+RIGHT_STICK = native
+
+[gameplay]
+A = null
+B = fp2.jump
+X = fp2.special
+Y = fp2.guard
+L1 = native
+R1 = native
+L2 = native
+R2 = fp2.attack
+L3 = native
+R3 = native
+START = fp2.pause
+SELECT = native
+UP = native
+DOWN = native
+LEFT = native
+RIGHT = native
+LEFT_STICK = fp2.move
+RIGHT_STICK = native

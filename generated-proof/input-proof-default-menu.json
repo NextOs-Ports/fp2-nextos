@@ -1,0 +1,678 @@
+{
+ "schema": "nx-device-input-proof-roteiro/1",
+ "port_id": "fp2",
+ "generated_by": "nxgenerator 0.3.17",
+ "classification": "ON_DEVICE_AUTOMATED_INPUT_PROOF",
+ "session": "menu",
+ "purpose": "default NEXTOSCONTROLLERS.gptk, context [menu]: every declared control, stick edges/diagonal with return to neutral, press/release once, hotplug, negatives, SELECT+START on one instance",
+ "clones": 2,
+ "steps": [
+  {
+   "timeout_s": 900,
+   "wait_log": "context=menu source=stage:no-player"
+  },
+  {
+   "sleep_ms": 6000
+  },
+  {
+   "ms": 150,
+   "press": "START"
+  },
+  {
+   "sleep_ms": 4000
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "A",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 3000
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "sleep_ms": 2500
+  },
+  {
+   "expect": "quiet"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "A",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "delivery",
+   "context": "menu",
+   "control": "A",
+   "action": "fp2.confirm",
+   "sink": "adapter.input.android-keyevent"
+  },
+  {
+   "expect": "count",
+   "kind": "delivery",
+   "control": "A",
+   "pressed": 1,
+   "value": 1
+  },
+  {
+   "expect": "count",
+   "kind": "delivery",
+   "control": "A",
+   "pressed": 0,
+   "value": 1
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "B",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "delivery",
+   "context": "menu",
+   "control": "B",
+   "action": "fp2.cancel",
+   "sink": "adapter.input.android-keyevent"
+  },
+  {
+   "expect": "count",
+   "kind": "delivery",
+   "control": "B",
+   "pressed": 1,
+   "value": 1
+  },
+  {
+   "expect": "count",
+   "kind": "delivery",
+   "control": "B",
+   "pressed": 0,
+   "value": 1
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "X",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "X"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "Y",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "Y"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "L1",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "L1"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "R1",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "R1"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "L2",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "L2"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "R2",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "R2"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "L3",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "L3"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "R3",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "R3"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "UP",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "UP"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "DOWN",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "DOWN"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "LEFT",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "LEFT"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "RIGHT",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "RIGHT"
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "LEFT_STICK",
+   "x": 1.0,
+   "y": 0.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "LEFT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "LEFT_STICK",
+   "x": -1.0,
+   "y": 0.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "LEFT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "LEFT_STICK",
+   "x": 0.0,
+   "y": 1.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "LEFT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "LEFT_STICK",
+   "x": 0.0,
+   "y": -1.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "LEFT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "LEFT_STICK",
+   "x": 0.7,
+   "y": 0.7,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "LEFT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "sleep_ms": 2000
+  },
+  {
+   "expect": "quiet"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "RIGHT_STICK",
+   "x": 1.0,
+   "y": 0.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "RIGHT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "RIGHT_STICK",
+   "x": -1.0,
+   "y": 0.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "RIGHT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "RIGHT_STICK",
+   "x": 0.0,
+   "y": 1.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "RIGHT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "RIGHT_STICK",
+   "x": 0.0,
+   "y": -1.0,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "RIGHT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "hold": "RIGHT_STICK",
+   "x": 0.7,
+   "y": 0.7,
+   "ms": 700
+  },
+  {
+   "sleep_ms": 1200
+  },
+  {
+   "expect": "no_delivery",
+   "control": "RIGHT_STICK"
+  },
+  {
+   "mark": true
+  },
+  {
+   "sleep_ms": 2000
+  },
+  {
+   "expect": "quiet"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "START",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 3000
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "expect": "delivery",
+   "context": "menu",
+   "control": "START",
+   "action": "fp2.pause",
+   "sink": "adapter.input.android-keyevent"
+  },
+  {
+   "expect": "count",
+   "kind": "delivery",
+   "control": "START",
+   "pressed": 1,
+   "value": 1
+  },
+  {
+   "expect": "count",
+   "kind": "delivery",
+   "control": "START",
+   "pressed": 0,
+   "value": 1
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "START",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 3000
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "unplug": 1
+  },
+  {
+   "sleep_ms": 2500
+  },
+  {
+   "expect": "log",
+   "regex": "controller-removed"
+  },
+  {
+   "expect": "quiet"
+  },
+  {
+   "replug": 1
+  },
+  {
+   "sleep_ms": 3000
+  },
+  {
+   "mark": true
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "quiet"
+  },
+  {
+   "mark": true
+  },
+  {
+   "chord": [
+    "L1",
+    "R1"
+   ],
+   "ms": 400
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "chord": [
+    "L2",
+    "R2"
+   ],
+   "ms": 400
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "chord_cross": [
+    "SELECT",
+    "START"
+   ],
+   "ms": 500
+  },
+  {
+   "sleep_ms": 2000
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "expect": "log",
+   "regex": "chord denied: SELECT and START on different pads"
+  },
+  {
+   "mark": true
+  },
+  {
+   "press": "SELECT",
+   "ms": 150
+  },
+  {
+   "sleep_ms": 1500
+  },
+  {
+   "expect": "no_log",
+   "regex": "runtime EXIT|lifecycle exit requested"
+  },
+  {
+   "mark": true
+  },
+  {
+   "chord": [
+    "SELECT",
+    "START"
+   ],
+   "ms": 300
+  },
+  {
+   "wait_exit": true,
+   "timeout_s": 60
+  },
+  {
+   "expect": "log",
+   "regex": "SELECT\\+START: lifecycle exit requested|exit-chord"
+  },
+  {
+   "expect": "exit_status",
+   "value": 0
+  },
+  {
+   "expect": "process_gone"
+  }
+ ]
+}

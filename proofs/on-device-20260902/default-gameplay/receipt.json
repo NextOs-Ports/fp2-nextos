@@ -1,0 +1,1336 @@
+{
+  "schema": "nx-device-input-proof/1",
+  "schema_version": 1,
+  "classification": "ON_DEVICE_AUTOMATED_INPUT_PROOF",
+  "claim": "valid proof of the input software on the target hardware, produced automatically by the framework through device-faithful uinput clones on the real device; does not claim to test mechanical wear of a physical button (hardware QA, outside this gate)",
+  "tool": {
+    "name": "nx-device-input-proof",
+    "version": "0.10.2"
+  },
+  "label": "fp2 1.1.3 default [gameplay], dArkOS K36S, ELF 5af66726 (2a tentativa)",
+  "port_id": "fp2",
+  "launcher": "Freedom Planet 2.sh",
+  "device": {
+    "cfw": "PRETTY_NAME=\"Debian GNU/Linux 13 (trixie)\";VERSION_ID=\"13\";VERSION=\"13 (trixie)\";ID=debian;",
+    "controller": {
+      "name": "GO-Super Gamepad",
+      "bustype": 25,
+      "vendor": "484b",
+      "product": "1100",
+      "version": 256,
+      "node": "/dev/input/event2",
+      "handlers": [
+        "js0",
+        "event2",
+        "dmcfreq"
+      ],
+      "key_codes": [
+        304,
+        305,
+        307,
+        308,
+        310,
+        311,
+        312,
+        313,
+        544,
+        545,
+        546,
+        547,
+        704,
+        705,
+        706,
+        707,
+        708
+      ],
+      "abs": {
+        "0": {
+          "min": -1800,
+          "max": 1800,
+          "fuzz": 32,
+          "flat": 32,
+          "resolution": 0,
+          "value": 0
+        },
+        "1": {
+          "min": -1800,
+          "max": 1800,
+          "fuzz": 32,
+          "flat": 32,
+          "resolution": 0,
+          "value": 0
+        },
+        "3": {
+          "min": -1800,
+          "max": 1800,
+          "fuzz": 32,
+          "flat": 32,
+          "resolution": 0,
+          "value": 0
+        },
+        "4": {
+          "min": -1800,
+          "max": 1800,
+          "fuzz": 32,
+          "flat": 32,
+          "resolution": 0,
+          "value": 0
+        }
+      },
+      "buttons": 17,
+      "axes": 4,
+      "hats": 0
+    },
+    "profile_key": "4d001f3007756a7ca80ef506561ba648b6075aad6d528f349ae3240226f76352",
+    "profile_reused": true
+  },
+  "sdl": {
+    "soname": "libSDL2-2.0.so.0",
+    "path": null,
+    "sha256": null,
+    "realpath": null
+  },
+  "injection": {
+    "provider": "uinput-clone-device-faithful",
+    "clones": {
+      "count": 2,
+      "nodes": [
+        "/dev/input/event4",
+        "/dev/input/event5"
+      ],
+      "created_unix": 1788378727.4711282
+    },
+    "born_before_game_sdl_init": true,
+    "helper": "nx-input-inject-agent.py (external to the port and to every ZIP)"
+  },
+  "mapping": {
+    "guid": "1900bb3e4b4800000011000000010000",
+    "name": "GO-Super Gamepad",
+    "fields": {
+      "a": "b1",
+      "b": "b0",
+      "back": "b12",
+      "dpdown": "b9",
+      "dpleft": "b10",
+      "dpright": "b11",
+      "dpup": "b8",
+      "guide": "b16",
+      "leftshoulder": "b4",
+      "leftstick": "b14",
+      "lefttrigger": "b6",
+      "leftx": "a0",
+      "lefty": "a1",
+      "rightshoulder": "b5",
+      "rightstick": "b15",
+      "righttrigger": "b7",
+      "rightx": "a2",
+      "righty": "a3",
+      "start": "b13",
+      "x": "b2",
+      "y": "b3",
+      "platform": "Linux",
+      "crc": "3ebb"
+    },
+    "line_sha256": "d0b56f4c9b287a3f4a74c86fd0a7d887c4ca26f7e29c838097f539d5a1c2a7ea",
+    "sdl_index_maps": {
+      "button_index_to_code": {
+        "0": 304,
+        "1": 305,
+        "2": 307,
+        "3": 308,
+        "4": 310,
+        "5": 311,
+        "6": 312,
+        "7": 313,
+        "8": 544,
+        "9": 545,
+        "10": 546,
+        "11": 547,
+        "12": 704,
+        "13": 705,
+        "14": 706,
+        "15": 707,
+        "16": 708
+      },
+      "axis_index_to_code": {
+        "0": 0,
+        "1": 1,
+        "2": 3,
+        "3": 4
+      },
+      "hats": {}
+    },
+    "control_table": {
+      "A": {
+        "type": "key",
+        "code": 305
+      },
+      "B": {
+        "type": "key",
+        "code": 304
+      },
+      "X": {
+        "type": "key",
+        "code": 307
+      },
+      "Y": {
+        "type": "key",
+        "code": 308
+      },
+      "L1": {
+        "type": "key",
+        "code": 310
+      },
+      "R1": {
+        "type": "key",
+        "code": 311
+      },
+      "L2": {
+        "type": "key",
+        "code": 312
+      },
+      "R2": {
+        "type": "key",
+        "code": 313
+      },
+      "L3": {
+        "type": "key",
+        "code": 706
+      },
+      "R3": {
+        "type": "key",
+        "code": 707
+      },
+      "START": {
+        "type": "key",
+        "code": 705
+      },
+      "SELECT": {
+        "type": "key",
+        "code": 704
+      },
+      "GUIDE": {
+        "type": "key",
+        "code": 708
+      },
+      "UP": {
+        "type": "key",
+        "code": 544
+      },
+      "DOWN": {
+        "type": "key",
+        "code": 545
+      },
+      "LEFT": {
+        "type": "key",
+        "code": 546
+      },
+      "RIGHT": {
+        "type": "key",
+        "code": 547
+      },
+      "LEFT_STICK": {
+        "type": "stick",
+        "x": {
+          "type": "axis",
+          "code": 0,
+          "sign": 1.0,
+          "inverted": false
+        },
+        "y": {
+          "type": "axis",
+          "code": 1,
+          "sign": 1.0,
+          "inverted": false
+        }
+      },
+      "RIGHT_STICK": {
+        "type": "stick",
+        "x": {
+          "type": "axis",
+          "code": 3,
+          "sign": 1.0,
+          "inverted": false
+        },
+        "y": {
+          "type": "axis",
+          "code": 4,
+          "sign": 1.0,
+          "inverted": false
+        }
+      }
+    },
+    "pads_admitted": [
+      "[fp2/input] controller: GO-Super Gamepad (484b:1100) mapping=1900bb3e4b4800000011000000010000,GO-Super Gamepad,a:b1,b:b0,back:b12,dpdown:b9,dpleft:b10,dpright:b11,dpup:b8,guide:b16,leftshoulder:b4,leftstick:b14,lefttrigger:b6,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b15,righttrigger:b7,rightx:a2,righty:a3,start:b13,x:b2,y:b3,platform:Linux,crc:3ebb,",
+      "[fp2/input] pad slot=0 instance=0 sdl_index=0",
+      "[fp2/input] controller: GO-Super Gamepad (484b:1100) mapping=1900bb3e4b4800000011000000010000,GO-Super Gamepad,a:b1,b:b0,back:b12,dpdown:b9,dpleft:b10,dpright:b11,dpup:b8,guide:b16,leftshoulder:b4,leftstick:b14,lefttrigger:b6,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b15,righttrigger:b7,rightx:a2,righty:a3,start:b13,x:b2,y:b3,platform:Linux,crc:3ebb,",
+      "[fp2/input] pad slot=1 instance=1 sdl_index=1",
+      "[fp2/input] controller: GO-Super Gamepad (484b:1100) mapping=1900bb3e4b4800000011000000010000,GO-Super Gamepad,a:b1,b:b0,back:b12,dpdown:b9,dpleft:b10,dpright:b11,dpup:b8,guide:b16,leftshoulder:b4,leftstick:b14,lefttrigger:b6,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b15,righttrigger:b7,rightx:a2,righty:a3,start:b13,x:b2,y:b3,platform:Linux,crc:3ebb,",
+      "[fp2/input] pad slot=2 instance=2 sdl_index=2",
+      "[fp2/input] controller: GO-Super Gamepad (484b:1100) mapping=1900bb3e4b4800000011000000010000,GO-Super Gamepad,a:b1,b:b0,back:b12,dpdown:b9,dpleft:b10,dpright:b11,dpup:b8,guide:b16,leftshoulder:b4,leftstick:b14,lefttrigger:b6,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b15,righttrigger:b7,rightx:a2,righty:a3,start:b13,x:b2,y:b3,platform:Linux,crc:3ebb,",
+      "[fp2/input] pad slot=2 instance=3 sdl_index=2"
+    ],
+    "face_layout": "auto"
+  },
+  "c6_admission": [
+    "[fp2/input] NXC6 seam: port bundle /roms/ports/fp2/controllers.nxb (layout=auto)",
+    "[fp2/input] NXC6 seam: staged=286 bytes env_still_set=0 receipt=/roms/ports/fp2/nxc6-receipt.log",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-SEAM seq=1 t_ns=65299023131362 pid=N tid=N sdl=sdl2 instance=0 guid=1900bb3e4b4800000011000000010000 stage=announce result=admit source=env-get-controls step_env=ok step_cfw=ok step_bundle=ok step_builtin=ok step_raw=ok readback_checked=1 buttons=17 axes=4 hats=0 source_crc_aliases=3 resolutions=1 admitted=1 dup_lastwins=0 domain_lines=0 domain_bindings=0 source_domain=unchanged target_domain=sdl2-evdev name=- db_class=none db_target=- db_retries=0 db_elapsed_ms=0 face_layout=auto effective_guid=1900bb3e4b4800000011000000010000 map_fnv1a64=e9e75a133a6b3e6d map_bytes=286",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-SEAM seq=2 t_ns=65299055010474 pid=N tid=N sdl=sdl2 instance=1 guid=1900bb3e4b4800000011000000010000 stage=announce result=admit source=env-get-controls step_env=ok step_cfw=ok step_bundle=ok step_builtin=ok step_raw=ok readback_checked=1 buttons=17 axes=4 hats=0 source_crc_aliases=3 resolutions=2 admitted=2 dup_lastwins=0 domain_lines=0 domain_bindings=0 source_domain=unchanged target_domain=sdl2-evdev name=- db_class=none db_target=- db_retries=0 db_elapsed_ms=0 face_layout=auto effective_guid=1900bb3e4b4800000011000000010000 map_fnv1a64=e9e75a133a6b3e6d map_bytes=286",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-SEAM seq=3 t_ns=65299083218284 pid=N tid=N sdl=sdl2 instance=2 guid=1900bb3e4b4800000011000000010000 stage=announce result=admit source=env-get-controls step_env=ok step_cfw=ok step_bundle=ok step_builtin=ok step_raw=ok readback_checked=1 buttons=17 axes=4 hats=0 source_crc_aliases=3 resolutions=3 admitted=3 dup_lastwins=0 domain_lines=0 domain_bindings=0 source_domain=unchanged target_domain=sdl2-evdev name=- db_class=none db_target=- db_retries=0 db_elapsed_ms=0 face_layout=auto effective_guid=1900bb3e4b4800000011000000010000 map_fnv1a64=e9e75a133a6b3e6d map_bytes=286",
+    "NXC6-SEAM seq=4 t_ns=65462478160832 pid=N tid=N sdl=sdl2 instance=2 guid=- stage=forget result=ok forgotten=1 still_admitted=2",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact",
+    "NXC6-SEAM seq=5 t_ns=65465294929712 pid=N tid=N sdl=sdl2 instance=3 guid=1900bb3e4b4800000011000000010000 stage=announce result=admit source=env-get-controls step_env=ok step_cfw=ok step_bundle=ok step_builtin=ok step_raw=ok readback_checked=1 buttons=17 axes=4 hats=0 source_crc_aliases=3 resolutions=4 admitted=3 dup_lastwins=0 domain_lines=0 domain_bindings=0 source_domain=unchanged target_domain=sdl2-evdev name=- db_class=none db_target=- db_retries=0 db_elapsed_ms=0 face_layout=auto effective_guid=1900bb3e4b4800000011000000010000 map_fnv1a64=e9e75a133a6b3e6d map_bytes=286"
+  ],
+  "gptk": {
+    "loaded_sha256": "05f9e91c220bf518",
+    "default_sha256": "05f9e91c220bf518602894ed2d77cb04b5b459378fb91e425edf82f3ecb6c9bf",
+    "owner_sha256": null
+  },
+  "adapter_contract_sha256": "cd095c5f08f589ac302d3eb09d3609ee3cb57ac0734e8eac6e8564586d105fc9",
+  "executable": {
+    "path": "fp2-nextos",
+    "sha256": "5af66726dad62159e5f444cad07dd0d0e66c9b2d4b4ad0b22054fb5089bec86c"
+  },
+  "generation": "61dd42aab480fac250a450b258f4cba145b6518ca8100951c8a3ba8542cabb72",
+  "run_id": "fp2-1868441-1788378739-23201",
+  "readback": {
+    "schema": "nxinput-gptk-event-evidence/1",
+    "lines": 60,
+    "sha256": "cde31b013d8ab91c02581ddcd87887a3702ad04c2c7953659021b81853293a41"
+  },
+  "contexts_seen": [
+    "context=gameplay source=stage:player-alive",
+    "context=menu source=stage:no-player",
+    "context=menu source=stage:paused"
+  ],
+  "sinks_seen": [
+    "adapter.input.android-keyevent",
+    "adapter.input.android-motion"
+  ],
+  "consumer": {
+    "exit_status": 0
+  },
+  "extraction": "NXE0001",
+  "verdicts": [
+    {
+      "step": 38,
+      "spec": {
+        "expect": "quiet"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 42,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "A",
+        "action": "fp2.attack",
+        "sink": "adapter.input.android-keyevent"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 43,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "A",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 44,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "A",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 48,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "B",
+        "action": "fp2.jump",
+        "sink": "adapter.input.android-keyevent"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 49,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "B",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 50,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "B",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 54,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "X",
+        "action": "fp2.special",
+        "sink": "adapter.input.android-keyevent"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 55,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "X",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 56,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "X",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 60,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "Y",
+        "action": "fp2.guard",
+        "sink": "adapter.input.android-keyevent"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 61,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "Y",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 62,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "Y",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 66,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "L1"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 67,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 71,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "R1"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 72,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 76,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "L2"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 77,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 81,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "R2"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 82,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 86,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "L3"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 87,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 91,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "R3"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 92,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 96,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "UP"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 97,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 101,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "DOWN"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 102,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 106,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "LEFT"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 107,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 111,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "RIGHT"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 112,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 116,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "LEFT_STICK",
+        "action": "fp2.move",
+        "sink": "adapter.input.android-motion"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 117,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 118,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 122,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "LEFT_STICK",
+        "action": "fp2.move",
+        "sink": "adapter.input.android-motion"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 123,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 124,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 128,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "LEFT_STICK",
+        "action": "fp2.move",
+        "sink": "adapter.input.android-motion"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 129,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 130,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 134,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "LEFT_STICK",
+        "action": "fp2.move",
+        "sink": "adapter.input.android-motion"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 4
+      }
+    },
+    {
+      "step": 135,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 4
+      }
+    },
+    {
+      "step": 136,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 4
+      }
+    },
+    {
+      "step": 140,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "LEFT_STICK",
+        "action": "fp2.move",
+        "sink": "adapter.input.android-motion"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 141,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 142,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "LEFT_STICK",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 145,
+      "spec": {
+        "expect": "quiet"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 149,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "RIGHT_STICK"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 153,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "RIGHT_STICK"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 1
+      }
+    },
+    {
+      "step": 157,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "RIGHT_STICK"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 161,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "RIGHT_STICK"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 165,
+      "spec": {
+        "expect": "no_delivery",
+        "control": "RIGHT_STICK"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 168,
+      "spec": {
+        "expect": "quiet"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 172,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 173,
+      "spec": {
+        "expect": "delivery",
+        "context": "gameplay",
+        "control": "START",
+        "action": "fp2.pause",
+        "sink": "adapter.input.android-keyevent"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 174,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "START",
+        "pressed": 1,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 175,
+      "spec": {
+        "expect": "count",
+        "kind": "delivery",
+        "control": "START",
+        "pressed": 0,
+        "value": 1
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 179,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 3,
+        "log_lines": 1
+      }
+    },
+    {
+      "step": 183,
+      "spec": {
+        "expect": "log",
+        "regex": "controller-removed"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 1,
+        "log_lines": 3
+      }
+    },
+    {
+      "step": 184,
+      "spec": {
+        "expect": "quiet"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 1,
+        "log_lines": 3
+      }
+    },
+    {
+      "step": 189,
+      "spec": {
+        "expect": "quiet"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 193,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 197,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 201,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 1
+      }
+    },
+    {
+      "step": 202,
+      "spec": {
+        "expect": "log",
+        "regex": "chord denied: SELECT and START on different pads"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 2,
+        "log_lines": 1
+      }
+    },
+    {
+      "step": 206,
+      "spec": {
+        "expect": "no_log",
+        "regex": "runtime EXIT|lifecycle exit requested"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 0
+      }
+    },
+    {
+      "step": 210,
+      "spec": {
+        "expect": "log",
+        "regex": "SELECT\\+START: lifecycle exit requested|exit-chord"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 19
+      }
+    },
+    {
+      "step": 211,
+      "spec": {
+        "expect": "exit_status",
+        "value": 0
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 19
+      }
+    },
+    {
+      "step": 212,
+      "spec": {
+        "expect": "process_gone"
+      },
+      "result": "PASS",
+      "why": "",
+      "window": {
+        "receipt_lines": 0,
+        "log_lines": 19
+      }
+    }
+  ],
+  "all_pass": true
+}

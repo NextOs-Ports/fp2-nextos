@@ -1,0 +1,14 @@
+NXCONTROLLER_PROFILES/1
+# face_layout=modern
+# muOS RG40XX-H official modern database (settings/advanced/swap=1): same
+# identity, a<->b and x<->y swapped by the user's own choice.
+# license=Zlib (SDL_GameControllerDB dialect; lines byte-intact from the
+# official muOS 2601.1 gamecontrollerdb, framework fixture muos-2601.1)
+# supplier=muOS RG40XX-H 2601.1
+# dialect=sdl2-gamecontrollerdb
+# platform=Linux
+# coverage=1 guid
+# claim=consulted only when FACE_LAYOUT selects this variant and no live
+# CFW authority answers; live authorities (env, database) always win.
+19000000010000000100000000010000,Deeplay-keys,a:b4,b:b3,x:b5,y:b6,leftshoulder:b7,rightshoulder:b8,lefttrigger:b13,righttrigger:b14,guide:b11,start:b10,back:b9,dpup:h0.1,dpleft:h0.8,dpright:h0.2,dpdown:h0.4,volumedown:b1,volumeup:b2,leftx:a0,lefty:a1,leftstick:b12,rightx:a2,righty:a3,rightstick:b15,platform:Linux,
+19000000010000000100000000010000,muOS-Keys,a:b4,b:b3,x:b5,y:b6,leftshoulder:b7,rightshoulder:b8,lefttrigger:b13,righttrigger:b14,guide:b11,start:b10,back:b9,dpup:h0.1,dpleft:h0.8,dpright:h0.2,dpdown:h0.4,volumedown:b1,volumeup:b2,leftx:a0,lefty:a1,leftstick:b12,rightx:a2,righty:a3,rightstick:b15,platform:Linux,

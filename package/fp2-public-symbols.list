@@ -1,0 +1,26 @@
+{
+  nxgl_frame_proof_before_present;
+  nxgl_frame_proof_publish;
+  nxgl_graphics_contract_validate;
+  nxgl_graphics_contract_adapter_shader_probe;
+  nxgl_graphics_contract_evidence_receipt;
+  nxinput_gptk_load_at;
+  nxinput_gptk_load_receipt_json;
+  nxinput_gptk_parse;
+  nxinput_gptk_decide;
+  nxinput_gptk_live_init;
+  nxinput_gptk_live_register;
+  nxinput_gptk_live_register_vector;
+  nxinput_gptk_live_seal;
+  nxinput_gptk_live_set_context;
+  nxinput_gptk_live_clear_context;
+  nxinput_gptk_live_should_consume;
+  nxinput_gptk_live_feed;
+  nxinput_gptk_live_feed_vector;
+  nxinput_gptk_runtime_marker;
+  nxinput_gptk_event_evidence_schema;
+  nxinput_gptk_preinit_load;
+  nxinput_exit_chord_update;
+  fp2_sink_android_keyevent;
+  fp2_sink_android_motion;
+};

@@ -1,0 +1,11 @@
+NXCONTROLLER_PROFILES/1
+# license=Zlib (SDL_GameControllerDB dialect; entries from the PortMaster gamecontrollerdb)
+# Authority 3 of the sovereign mapping order: the safety net pinned inside
+# the port ZIP. Only physically proven entries enter this file -- a binding
+# is NEVER synthesized from a name, VID/PID or guess. The zero-CRC GUID form
+# is the database identity; the runtime projects the live CRC word when SDL
+# itself would (nxinput 0.9.0).
+#
+# GO-Super Gamepad (dArkOS fixture, validated live on the device for the
+# Nameless Cat port; the same handheld family runs this port):
+190000004b4800000011000000010000,GO-Super Gamepad,a:b1,b:b0,x:b3,y:b2,leftshoulder:b4,rightshoulder:b5,lefttrigger:b6,righttrigger:b7,back:b12,start:b13,leftstick:b14,rightstick:b15,leftx:a0,lefty:a1,rightx:a2,righty:a3,dpup:h0.1,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,platform:Linux,

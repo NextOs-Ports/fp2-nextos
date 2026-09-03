@@ -1,0 +1,190 @@
+{
+  "executable": "fp2/fp2-nextos",
+  "input_proof": {
+    "adapter_contract_sha256": "cd095c5f08f589ac302d3eb09d3609ee3cb57ac0734e8eac6e8564586d105fc9",
+    "cases": [
+      {
+        "action": "fp2.attack",
+        "context": "gameplay",
+        "context_source": "stage:player-alive",
+        "control": "A",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      },
+      {
+        "action": "fp2.jump",
+        "context": "gameplay",
+        "context_source": "stage:player-alive",
+        "control": "B",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      },
+      {
+        "action": "fp2.move",
+        "context": "gameplay",
+        "context_source": "stage:player-alive",
+        "control": "LEFT_STICK",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "motion",
+        "sink": "adapter.input.android-motion"
+      },
+      {
+        "action": "fp2.pause",
+        "context": "gameplay",
+        "context_source": "stage:player-alive",
+        "control": "START",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      },
+      {
+        "action": "fp2.special",
+        "context": "gameplay",
+        "context_source": "stage:player-alive",
+        "control": "X",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      },
+      {
+        "action": "fp2.guard",
+        "context": "gameplay",
+        "context_source": "stage:player-alive",
+        "control": "Y",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      },
+      {
+        "action": "fp2.confirm",
+        "context": "menu",
+        "context_source": "stage:no-player",
+        "control": "A",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      },
+      {
+        "action": "fp2.cancel",
+        "context": "menu",
+        "context_source": "stage:no-player",
+        "control": "B",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      },
+      {
+        "action": "fp2.pause",
+        "context": "menu",
+        "context_source": "stage:no-player",
+        "control": "START",
+        "decision": "ACTION",
+        "delivery_count": 1,
+        "event": "press",
+        "sink": "adapter.input.android-keyevent"
+      }
+    ],
+    "contexts": [
+      {
+        "context": "gameplay",
+        "observed": true,
+        "source": "stage:player-alive"
+      },
+      {
+        "context": "menu",
+        "observed": true,
+        "source": "stage:no-player"
+      }
+    ],
+    "generation": "549d40f2e5e49bf32a87604bc47a80593a2bfdf41bfba0d67fe3c2f79ddc9aa8",
+    "mapping_sha256": "05f9e91c220bf518602894ed2d77cb04b5b459378fb91e425edf82f3ecb6c9bf",
+    "port_id": "fp2",
+    "run_id": "fp2-901220-1788348221-19633",
+    "runtime": {
+      "evidence_schema": "nxinput-gptk-event-evidence/1",
+      "marker": "nxinput-gptk-runtime/3",
+      "symbols": [
+        "fp2_sink_android_keyevent",
+        "fp2_sink_android_motion",
+        "nxinput_gptk_decide",
+        "nxinput_gptk_event_evidence_schema",
+        "nxinput_gptk_live_clear_context",
+        "nxinput_gptk_live_feed",
+        "nxinput_gptk_live_feed_vector",
+        "nxinput_gptk_live_init",
+        "nxinput_gptk_live_register",
+        "nxinput_gptk_live_register_vector",
+        "nxinput_gptk_live_seal",
+        "nxinput_gptk_live_set_context",
+        "nxinput_gptk_live_should_consume",
+        "nxinput_gptk_load_at",
+        "nxinput_gptk_load_receipt_json",
+        "nxinput_gptk_parse",
+        "nxinput_gptk_runtime_marker"
+      ]
+    },
+    "safety": {
+      "failed_ack": {
+        "native_replay": false,
+        "result": "FATAL"
+      },
+      "missing_sink": {
+        "delivery_count": 0,
+        "result": "PASSTHROUGH",
+        "suppressed": false
+      },
+      "unknown_context": {
+        "delivery_count": 0,
+        "result": "PASSTHROUGH",
+        "suppressed": false
+      }
+    },
+    "schema": "nxinput-gptk-event-evidence/1",
+    "schema_version": 1,
+    "sinks": [
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "adapter.input.android-keyevent",
+        "symbol": "fp2_sink_android_keyevent",
+        "targets": [
+          "fp2/fp2-nextos"
+        ]
+      },
+      {
+        "exists": true,
+        "method": "runtime-action-registry",
+        "sink": "adapter.input.android-motion",
+        "symbol": "fp2_sink_android_motion",
+        "targets": [
+          "fp2/fp2-nextos"
+        ]
+      }
+    ],
+    "verdict": "OK"
+  },
+  "input_proof_receipt_sha256": "3ec136895f8c293c49876c9339f074ec3923e25204f360dbac6ef33c39c87f4a",
+  "schema": "nxrelease-candidate-lock-v1",
+  "schema_version": 1,
+  "sha256": "0755f8cebcfb40f883f617a69826d22dbfabae6f877c184bff779bb7daeeaee3",
+  "video_proof": {
+    "generation": "549d40f2e5e49bf32a87604bc47a80593a2bfdf41bfba0d67fe3c2f79ddc9aa8",
+    "port_id": "fp2",
+    "reason": "non-black",
+    "run_id": "fp2-901220-1788348221-19633",
+    "schema": "org.nextos.nxruntime.video-proof",
+    "schema_version": 1,
+    "verdict": "OK"
+  },
+  "video_proof_receipt_sha256": "2e091f2948ae7049a5d372b946550afb43277ade69fb48c8e1adafdca9799bf0"
+}

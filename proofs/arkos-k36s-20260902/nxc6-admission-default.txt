@@ -1,0 +1,4 @@
+[fp2/input] NXC6 seam: port bundle /roms/ports/fp2/controllers.nxb (layout=auto)
+[fp2/input] NXC6 seam: staged=286 bytes env_still_set=0 receipt=/roms/ports/fp2/nxc6-receipt.log
+NXC6-DOMAIN guid=1900bb3e4b4800000011000000010000 matching=1 rewritten=0 rewritten_bindings=0 native=0 identical=1 ambiguous=0 invalid=0 volume_markers=0 result=byte-intact
+NXC6-SEAM seq=1 t_ns=35206541448802 pid=N tid=N sdl=sdl2 instance=0 guid=1900bb3e4b4800000011000000010000 stage=announce result=admit source=env-get-controls step_env=ok step_cfw=ok step_bundle=ok step_builtin=ok step_raw=ok readback_checked=1 buttons=17 axes=4 hats=0 source_crc_aliases=3 resolutions=1 admitted=1 dup_lastwins=0 domain_lines=0 domain_bindings=0 source_domain=unchanged target_domain=sdl2-evdev name=- db_class=none db_target=- db_retries=0 db_elapsed_ms=0 face_layout=auto effective_guid=1900bb3e4b4800000011000000010000 map_fnv1a64=e9e75a133a6b3e6d map_bytes=286
